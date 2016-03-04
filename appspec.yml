@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /html
-    destination: /var/www/magento/
+    destination: /var/www/magento/html
 #  - source: /magento/env.php
 #    destination: /var/www/magento/html/app/etc/
 #  - source: /magento/config.php
