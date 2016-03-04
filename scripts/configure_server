@@ -12,10 +12,11 @@ ln -s /opt/remi/php56/root/etc /etc/php
 ln -s /opt/remi/php56/root/var/log/php-fpm /var/log/php-fpm
 ln -s /usr/bin/php56 /usr/bin/php
 curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/bin/composer
+mv /opt/codedeploy-agent/composer.phar /usr/bin/composer
 mv /etc/php/php-fpm.d/www.conf /etc/php/php-fpm.d/www.conf.bk
 mv /etc/php/php.ini /etc/php/php.ini.bk
 mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bk
+mkdir /var/www/magento
 chmod -R 777 /var/www/magento
 chown -R www-data:www-data /var/www/magento
 chown -R www-data:www-data /var/log/nginx
