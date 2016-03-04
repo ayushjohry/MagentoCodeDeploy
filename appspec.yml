@@ -3,10 +3,10 @@ os: linux
 files:
   - source: /html
     destination: /var/www/magento/
-  - source: /magento/env.php
-    destination: /var/www/magento/html/app/etc/
-  - source: /magento/env.php
-    destination: /var/www/magento/html/app/etc/
+#  - source: /magento/env.php
+#    destination: /var/www/magento/html/app/etc/
+#  - source: /magento/config.php
+#    destination: /var/www/magento/html/app/etc/
   - source: /php/php.ini
     destination: /etc/php/
   - source: /php/www.conf
@@ -26,6 +26,9 @@ hooks:
       timeout: 300
       runas: root
     - location: scripts/sync_media
+      timeout: 300
+      runas: root
+    - location: scripts/prepare_install
       timeout: 300
       runas: root
   AfterInstall:
