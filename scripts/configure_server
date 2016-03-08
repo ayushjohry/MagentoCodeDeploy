@@ -50,8 +50,8 @@ fi
 #####
 # Create www-data user
 #####
-UID=$(id -u www-data)
-if [ ! UID > 0 ]
+TestId=$(id -u www-data)
+if [ ! TestId ]
   then
     groupadd www-data
     useradd -g www-data www-data
