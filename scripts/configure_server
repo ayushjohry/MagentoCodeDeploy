@@ -93,7 +93,7 @@ fi
 #####
 if [ ! -d "/var/www/magento" ]
   then
-    mkdir /var/www/magento
+    mkdir -p /var/www/magento
     chmod -R 777 /var/www/magento
     chown -R www-data:www-data /var/www/magento
   else
