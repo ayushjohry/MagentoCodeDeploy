@@ -50,16 +50,16 @@ fi
 #####
 # Create www-data user
 #####
-TestId=$(id -u www-data)
-if [ ! TestId ]
-  then
+#TestId=$(id -u www-data)
+#if [ ! TestId ]
+#  then
     groupadd www-data
     useradd -g www-data www-data
     chown -R www-data:www-data /opt/remi
     chown -R www-data:www-data /var/log/nginx
-  else
-    echo "User www-data alrady exists..";
-fi
+#  else
+#    echo "User www-data alrady exists..";
+#fi
 
 #####
 # Install composer
