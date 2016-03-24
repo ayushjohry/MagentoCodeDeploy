@@ -1,1 +1,1 @@
-# magedeploy
+# AWS Code Deploy for Magento
