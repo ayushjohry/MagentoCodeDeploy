@@ -11,3 +11,8 @@
 4) PHP-fpm files (php.ini, www.conf) go in the /php directory
 <br>
 5) All scripts referenced in the appspec.yml file go in the /scripts directory
+<br>
+
+<b>AWS Code Deploy appspec.yml file</b>
+<br>
+The appspec.yml file contains a list of resources in the form of artifacts and scripts that are called at certain hook points in the deployment process-- from stopping the application & entering maintenance mode, to deploying the code & restarting the services.
