@@ -1,6 +1,6 @@
 # AWS Code Deploy for Magento v2.x
 
-Quick Notes:
+<b>Quick Notes:</b>
 
 1) Magento code base go in the /html directory
 <br>
