@@ -20,33 +20,25 @@ files:
   - source: /test/demo.conf
     destination: /var/www/  
 hooks:
-  # BeforeInstall:
-  #   - location: scripts/configure_server
-  #     timeout: 300
-  #     runas: root
-  #   - location: scripts/configure_nfs
-  #     timeout: 300
-  #     runas: root
-  #   - location: scripts/sync_media
-  #     timeout: 300
-  #     runas: root
-  #   - location: scripts/prepare_install
-  #     timeout: 300
-  #     runas: root
-  # AfterInstall:
-  #   - location: scripts/configure_magento
-  #     timeout: 300
-  #     runas: root
-  # ApplicationStart:
-  #   - location: scripts/start_application
-  #     timeout: 300
-  #     runas: root
-  # ApplicationStop:
-  #   - location: scripts/stop_application
-  #     timeout: 300
-  #     runas: root
+  Install:
+    - location: scripts/configure_server
+      timeout: 300
+      runas: root
+  
+  AfterInstall:
+    - location: scripts/configure_magento
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/start_application
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_application
+      timeout: 300
+      runas: root
 
-  Update:
+  Validate:
     - location: scripts/test
       timeout: 300
       runas: root    

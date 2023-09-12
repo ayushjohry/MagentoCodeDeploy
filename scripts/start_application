@@ -1,3 +1,4 @@
 #!/bin/bash
-/etc/init.d/nginx restart
-/etc/init.d/php56-php-fpm restart
+sudo php bin/magento maintenance:disable
+sudo /etc/init.d/php8.1-fpm restart
+sudo /etc/init.d/nginx restart

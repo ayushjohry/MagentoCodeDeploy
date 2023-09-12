@@ -2,4 +2,4 @@
 #####
 # Remove last archived version
 #####
-rm -rf /var/www/magento/html.bk
+sudo php bin/magento maintenance:enable
