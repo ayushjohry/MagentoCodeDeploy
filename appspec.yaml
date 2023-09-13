@@ -3,22 +3,21 @@ os: linux
 files:
   - source: /html
     destination: /var/www/html/magento
-#  - source: /magento/env.php
-#    destination: /var/www/magento/html/app/etc/
-#  - source: /magento/config.php
-#    destination: /var/www/magento/html/app/etc/
-  # - source: /php/php.ini
-  #   destination: /etc/php/
-  # - source: /php/www.conf
-  #   destination: /etc/php/php-fpm.d/
-  # - source: /nginx/nginx.conf
-  #   destination: /etc/nginx/
-  # - source: /nginx/magento.conf
-  #   destination: /etc/nginx/conf.d/
-  # - source: /nginx/app.conf
-  #   destination: /var/www/magento/
-  # - source: /test/demo.conf
-  #   destination: /var/www/  
+ - source: /magento/env.php
+   destination: /var/www/magento/html/app/etc/
+ - source: /magento/config.php
+   destination: /var/www/magento/html/app/etc/
+  - source: /php/php.ini
+    destination: /etc/php/
+  - source: /php/www.conf
+    destination: /etc/php/php-fpm.d/
+  - source: /nginx/nginx.conf
+    destination: /etc/nginx/
+  - source: /nginx/magento.conf
+    destination: /etc/nginx/conf.d/
+  - source: /nginx/app.conf
+    destination: /var/www/magento/
+ 
 hooks:
   Install:
     - location: scripts/configure_server
