@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  # - source: /html
-  #   destination: /var/www/magento/html
+  - source: /html
+    destination: /var/www/html/magento
 #  - source: /magento/env.php
 #    destination: /var/www/magento/html/app/etc/
 #  - source: /magento/config.php
@@ -17,8 +17,8 @@ files:
   #   destination: /etc/nginx/conf.d/
   # - source: /nginx/app.conf
   #   destination: /var/www/magento/
-  - source: /test/demo.conf
-    destination: /var/www/  
+  # - source: /test/demo.conf
+  #   destination: /var/www/  
 hooks:
   Install:
     - location: scripts/configure_server
