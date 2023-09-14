@@ -19,6 +19,10 @@ files:
     destination: /var/www/magento/
  
 hooks:
+  ApplicationStop:
+    - location: scripts/stop_application
+      timeout: 300
+      runas: root
   Install:
     - location: scripts/configure_server
       timeout: 300
@@ -32,10 +36,7 @@ hooks:
     - location: scripts/start_application
       timeout: 300
       runas: root
-  ApplicationStop:
-    - location: scripts/stop_application
-      timeout: 300
-      runas: root
+  
 
   Validate:
     - location: scripts/test
