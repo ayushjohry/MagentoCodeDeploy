@@ -23,7 +23,8 @@ hooks:
     - location: scripts/stop_application
       timeout: 300
       runas: root
-  Install:
+
+  BeforeInstall:
     - location: scripts/configure_server
       timeout: 300
       runas: root
