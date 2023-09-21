@@ -6,7 +6,7 @@ files:
   - source: /magento/env.php
     destination: /var/www/html/magento/app/etc/
   - source: /magento/config.php
-    destination: /var/www/magento/html/app/etc/
+    destination: /var/www/html/magento/app/etc/
   - source: /php/php.ini
     destination: /etc/php/
   - source: /php/www.conf
