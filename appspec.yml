@@ -25,7 +25,7 @@ hooks:
       runas: root
 
   BeforeInstall:
-    - location: scripts/configure_server
+    - location: scripts/before_server
       timeout: 300
       runas: root
   
