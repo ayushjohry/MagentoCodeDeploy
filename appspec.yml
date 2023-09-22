@@ -17,6 +17,8 @@ files:
     destination: /etc/nginx/conf.d/
   - source: /nginx/app.conf
     destination: /var/www/magento/
+
+file_exists_behavior: OVERWRITE    
  
 hooks:
   ApplicationStop:
