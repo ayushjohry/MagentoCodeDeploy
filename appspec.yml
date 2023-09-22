@@ -1,30 +1,32 @@
 version: 0.0
 os: linux
 files:
-  - source: /html
-    destination: /var/www/html/magento
-    overwrite: true
-  - source: /magento/env.php
-    destination: /var/www/html/magento/app/etc/
-    overwrite: true
-  - source: /magento/config.php
-    destination: /var/www/html/magento/app/etc/
-    overwrite: true
-  - source: /php/php.ini
-    destination: /etc/php/
-    overwrite: true
-  - source: /php/www.conf
-    destination: /etc/php/php-fpm.d/
-    overwrite: true
-  - source: /nginx/nginx.conf
-    destination: /etc/nginx/
-    overwrite: true
-  - source: /nginx/magento.conf
-    destination: /etc/nginx/conf.d/
-    overwrite: true
-  - source: /nginx/app.conf
-    destination: /var/www/magento/
-    overwrite: true
+  # - source: /html
+  #   destination: /var/www/html/magento
+  #   overwrite: true
+  # - source: /magento/env.php
+  #   destination: /var/www/html/magento/app/etc/
+  #   overwrite: true
+  # - source: /magento/config.php
+  #   destination: /var/www/html/magento/app/etc/
+  #   overwrite: true
+  # - source: /php/php.ini
+  #   destination: /etc/php/
+  #   overwrite: true
+  # - source: /php/www.conf
+  #   destination: /etc/php/php-fpm.d/
+  #   overwrite: true
+  # - source: /nginx/nginx.conf
+  #   destination: /etc/nginx/
+  #   overwrite: true
+  # - source: /nginx/magento.conf
+  #   destination: /etc/nginx/conf.d/
+  #   overwrite: true
+  # - source: /nginx/app.conf
+  #   destination: /var/www/magento/
+  #   overwrite: true
+  - source: /test/demo.conf
+    destination: /test/  
 
 file_exists_behavior: OVERWRITE    
  
