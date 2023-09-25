@@ -1,2 +1,2 @@
-cd /var/www/html/magento/
+cd var/www/html/magento
 sudo php bin/magento maintenance:enable
