@@ -1,2 +1,3 @@
-cd var/www/html/magento
+cd /var/www/html/magento
+sudo chmod u+x bin/magento
 sudo php bin/magento maintenance:enable
