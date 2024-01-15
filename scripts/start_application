@@ -1,7 +1,4 @@
-cd /var
-cd /www
-cd /html
-cd /magento
+
 sudo php bin/magento maintenance:disable
 sudo /etc/init.d/php8.1-fpm restart
 sudo /etc/init.d/nginx restart
