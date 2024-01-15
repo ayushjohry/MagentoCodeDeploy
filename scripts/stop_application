@@ -1,3 +1,4 @@
-redis-server --daemonize yes
+# redis-server --daemonize yes
+cd /var/www/html/magento
 sudo chmod 777 bin/magento
 sudo php bin/magento maintenance:enable
