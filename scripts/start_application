@@ -1,4 +1,5 @@
 # sudo rm -rf var/cache var/generation var/di
+# redis-server --daemonize yes
 sudo php bin/magento maintenance:disable
 sudo /etc/init.d/php8.1-fpm restart
 sudo /etc/init.d/nginx restart
