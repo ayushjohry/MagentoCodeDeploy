@@ -1,4 +1,4 @@
-
+# sudo rm -rf var/cache var/generation var/di
 sudo php bin/magento maintenance:disable
 sudo /etc/init.d/php8.1-fpm restart
 sudo /etc/init.d/nginx restart
